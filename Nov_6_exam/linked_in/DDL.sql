@@ -64,4 +64,8 @@ CREATE TABLE follow(
     FOREIGN KEY (company_id) REFERENCES company(company_id) ON DELETE CASCADE,
 
     PRIMARY KEY(from_id,company_id)
-)
+);
+
+CREATE INDEX follow_company on follow(company_id);
+CREATE INDEX connection_to on connection(to_id);
+CREATE INDEX experience_profile on experience(profile_id,start); 
