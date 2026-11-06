@@ -1,0 +1,1 @@
+This repo contains data base desing , ddl and query for specific scenario conducted in alpha 300 assessments.
